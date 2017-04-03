@@ -1,6 +1,9 @@
-/// Copyright 2017 Dmitriy Markovich
+/// Copyright 2017 Dmitriy Markovich @ dmmrkovich@gmail.com
+
 // file: triangle.cc
+
 // purpose: source file for header file triangle.h
+
 #include "triangle.h"
 #include <math.h>
 #include <iostream>
@@ -17,7 +20,6 @@ void Triangle::set(double a, double b, double c) {
 
 // sets if side lengths are valid (positive, non-zero, non-nan, non-inf)
 void Triangle::set_side_lengths_are_valid() {
-  // x == x will be false if x is NaN
   if (!isnan(a) && !isinf(a) && a > 0.0 &&
       !isnan(b) && !isinf(b) && b > 0.0 &&
       !isnan(c) && !isinf(c) && c > 0.0) {

@@ -1,6 +1,9 @@
-/// Copyright 2017 Dmitriy Markovich
+/// Copyright 2017 Dmitriy Markovich @ dmmrkovich@gmail.com
+
 // file: triangle.h
+
 // purpose: header file for class Triangle to store triangle objects
+
 #ifndef _TRIANGLE_H_
 #define _TRIANGLE_H_
 #include <math.h>
@@ -19,10 +22,6 @@ class Triangle {
  public:
   // default constructor
   Triangle() {}
-  // parameterized constructor
-  Triangle(double a, double b, double c) {
-    this -> a = a; this -> b = b; this -> c = c;
-  }  // End of Triangle(double a, double b, double c)
   // default destructor
   ~Triangle() {}
   // sets the object with parameters a, b, c
