@@ -13,12 +13,12 @@ $CC $CCFLAGS main.cc src/triangle.cc src/helper_functions.cc -I$path -o main.cc.
 default_data="test-scenarios.txt";
 # run binary if compiled
 if [[ -f main.cc.bin ]]; then
-    if [[ -z "$1" ]]; then
+    if [[ -z "$data" ]]; then
         echo ">>>> Running main.cc.bin with default data file for test scenarios.";
         ./main.cc.bin $default_data;
     else
-        echo ">>>> Running main.cc.bin with $1 data file for test scenarios.";
-        ./main.cc.bin $1;
+        echo ">>>> Running main.cc.bin with $data data file for test scenarios.";
+        ./main.cc.bin $data;
     fi
     # remove binary
     rm ./main.cc.bin;
