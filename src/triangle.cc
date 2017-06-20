@@ -52,7 +52,7 @@ void Triangle::set_is_triangle() {
 std::string Triangle::determine_type() const {
   if (side_lengths_are_valid) {
     if (is_triangle) {
-      if (a == b || a == c || b == c) {
+      if (a == b || a == c || b == c) { // A-a-a-a! Тут тебя должны были зарубить. Нельзя сравнивать два double используя ==
         if (a == b && a == c && b == c) {
           // equilateral triangle, all sides are equal
           return "equilateral";
